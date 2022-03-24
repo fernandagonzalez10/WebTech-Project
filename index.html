@@ -27,16 +27,16 @@
 
     <style>
       body {
-        background-color: #F5EBE0;
+        background-color: #f5ebe0;
       }
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #E3D5CA;
+        background-color: #e3d5ca;
       }
-      li{
+      li {
         float: left;
       }
 
@@ -50,73 +50,131 @@
       }
       li a:hover {
         text-decoration: double;
-        background-color: #D5BDAF;
+        background-color: #d5bdaf;
       }
-      .img-one{
+      .img-one {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 300px;
+        height: 500px;
       }
 
       table {
-        margin-top: 0px;
+        margin-top: -120px;
+        padding-top: 0px;
         text-align: center;
         border: 0px;
         padding-left: 100px;
       }
-      #goods 
-      {background-color: aquamarine;}
+      #form-one {
+        background-color: #edede9;
+      }
 
+      form {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 400px;
+        padding-right: 400px;
+      }
+
+      #statement {
+        margin-top: -0px;
+        padding-left: 0px;
+      }
+
+      #purpose-2 {
+        font-size: 20px;
+        text-align: left;
+        text-decoration:wavy;
+        padding: 30px;
+        margin-top: -40px;
+      }
     </style>
-
   </head>
   <body>
+    <!--Navigation bar-->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="recipes">All Recipes</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="sitemap">Sitemap</a></li>
+    </ul>
 
-   <!--Navigation bar-->
-   <ul>
-     <li><a href="#home">Home</a></li>
-     <li><a href="#about">About</a></li>
-     <li><a href="recipes">All Recipes</a></li>
-     <li><a href="contact">Contact</a></li>
-     <li><a href="sitemap">Sitemap</a></li>
-   </ul>
+    <!--Title Picture-->
+    <img
+      src="images/title.png"
+      alt="Fernanda's Cookbook"
+      height="300px"
+      class="img-one"
+    />
 
-   <!--Title Picture-->
-   <img src="images/title.png" alt="Fernanda's Cookbook" height="300px" class="img-one">
+    <!--Three Initial Images-->
+    <table>
+      <tr>
+        <td><h2>Sweet Recipes</h2></td>
+        <td><h2>Savory Recipes</h2></td>
+        <td><h2>Salad Recipes</h2></td>
+      </tr>
+      <tr>
+        <td><img src="images/sweet.png" alt="Sweet Foods" height="300px" /></td>
+        <td>
+          <img src="images/savory.png" alt="Savory Foods" height="300px" />
+        </td>
+        <td><img src="images/salads.png" alt="Salads" height="300px" /></td>
+      </tr>
+    </table>
 
-   <!--Three Initial Images-->
-   <table>
-     <tr>
-       <td><h2>Sweet Recipes</h2></td>
-       <td><h2>Savory Recipes</h2></td>
-       <td><h2>Salad Recipes</h2></td>
-     </tr>
-     <tr>
-       <td><img src="images/sweet.png" alt="Sweet Foods" height="300px"></td>
-       <td><img src="images/savory.png" alt="Savory Foods" height="300px"></td>
-       <td> <img src="images/salads.png" alt="Salads" height="300px"></td>
-     </tr>
-   </table>
+    <form action="https://oim-apis.herokuapp.com/form" method="post">
+      <fieldset id="form-one">
+        <legend><h3>Don't miss out on the goods!</h3></legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            placeholder="Enter your name here"
+            name="name"
+            id="name-input"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email here"
+            name="email"
+            id="email-input"
+          />
+          <p>
+            <label>
+              <input
+                type="checkbox"
+                checked="checked"
+                name="subscribe"
+              />Subscribe to receive weekly emails from Fernanda's Cookbook
+            </label>
+          </p>
+          <div class="container">
+            <input type="submit" value="Subscribe" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
 
-   <p id="goods">
-<form action="action_page.php">
-  <div class="container">
-    <h4> Don't miss out on the goods! Subscribe to our Newsletter.</h4>
-  </div>
-  <div class="container">
-<input type="text" placeholder="Name" name="name" required>
-<input type="text" placeholder="Email address" name="mail" required>
-<label>
-  <input type="checkbox" checked="checked" name="subscribe">Monthly Newsletter
-</label>
-  </div>
-
-  <div class="container">
-    <input type="submit" value="Subscribe">
-  </div>
-</form>
-   </p>
-
+    <p>
+      <img
+        id="statement"
+        src="images/purpose.png"
+        alt="Statement of Purpose"
+        height="125px"
+      />
+      <p id="purpose-2">
+      Fernanda's Cookbook is a one-woman show. This website's goal is to offer
+      the recipes that amateurs like me enjoy cooking. My ultimate purpose is
+      to share my love letter to food and the joy of making it, documenting it,
+      and eating it. I hope you get the opportunity to explore the magic of kitchen arts-and-crafts and hopefully join this wonderful and welcoming community. Bon appetit!
+      </p>
+    </p>
   </body>
 </html>
