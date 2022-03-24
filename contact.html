@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Feedback</title>
+
+    <style>
+        body {
+            color: black;
+            background-color: #EDEDE9;
+        }
+        form {background-color: #D6CCC2;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-style: dotted; border-color: #d5BDAF; border-width: 10px;
+        }
+        input#sub {
+            background-color: #F5EBE0; border-color: #E3D5CA;
+        }
+        input#res {
+            background-color: #F5EBE0; border-color: #E3D5CA; margin-left: 15px;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #e3d5ca;
+      }
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+      }
+      li a:hover {
+        text-decoration: double;
+        background-color: #d5bdaf;
+      }
+      #contact {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+      }
+      #kitchen-pic { 
+        position: relative;
+        left: -60px;
+        top: 2px;
+      }
+      h2 {
+        position: relative;
+        font-size: 20px;
+        left: -10px;
+        margin-top: -25px;
+        margin-bottom: 20px;
+      }
+      h4 {
+          position: relative;
+          font-size: 20px;
+          left: 130px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      .rate {
+          float: left;
+          height: 46px;
+          padding: 0 10px;
+      }
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked  label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08 ;
+}
+#age, #gender, #star-rating, #tried, #good, #bad, #submit-btn {
+    margin-top: 20px;
+}
+#pref {
+    margin-top: 55px;
+}
+.box {
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="recipes">All Recipes</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="sitemap">Sitemap</a></li>
+          </ul>
+    
+        <img id="contact" src="images/contact.PNG" alt="Contact Title" height="200px">
+<form action="" method="post">
+
+        <p>
+            <h2>Have a question or comment for Fernanda? Reach out with the form below!</h2>
+        </p>
+
+        <img id="kitchen-pic" src="images/kitchen.png" alt="Kitchen" class="left" width="100%">
+            <p><h4>I would love to hear your thoughts and comments!</h4></p> 
+            <p>First Name: &nbsp;<input type="text" name="fname" size="20" maxlength="40" placeholder="Your First Name Here"/>
+            
+            Last Name: &nbsp;<input type="text" name="lname" size="20" maxlength="40" placeholder="Your Last Name Here"/>
+            </p>
+                <p id="age">
+                    Age:&nbsp;
+                    <input type="text" name="age" maxlength="100" size="20" placeholder="Your Age Here"/>
+                </p>
+    
+            
+                <p id="gender">Gender: &nbsp;
+                    &nbsp;Female: <input type="radio" name="gender" value="Female"/>
+                    &nbsp;Male:<input type="radio" name="gender" value="Male"/>
+                    &nbsp;Other:<input type="radio" name="gender" value="Male"/>
+                </p>
+                <p id="star-rating">
+                    <h3>How would you rate our website?</h3>
+                <div class ="rate">
+                    <input type="radio" id="5stars" name="rate" value="5"/>
+                    <label for="5stars" title="text">5 Stars</label>
+                    <input type="radio" id="4stars" name="rate" value="4"/>
+                    <label for="4stars" title="text">4 Stars</label>
+                    <input type="radio" id="3stars" name="rate" value="3"/>
+                    <label for="3stars" title="text">3 Stars</label>
+                    <input type="radio" id="2stars" name="rate" value="2"/>
+                    <label for="2stars" title="text">2 Stars</label>
+                    <input type="radio" id="1stars" name="rate" value="1"/>
+                    <label for="1stars" title="text">1 Stars</label>
+                </div>
+                </p>
+                <div>
+                <p id="pref">Please select your preference for recipes:
+                    &nbsp;<select name="preference">
+                    <option value="Sweet">Sweet</option>
+                    <option value="Savory">Savory</option>
+                </select>
+                </p>
+                </div>
+                <p id="tried">Which recipes have you tried? (please select all that apply). <br>
+                    <h3 class="box">Sweet</h3>
+                    <input type="checkbox" name="topic3" value="Cake1"/>Olive Oil Cake<br/>
+                    <h3 class="box">Savory</h3>
+                    <input type="checkbox" name="topic1" value="Pasta"/> Rigatoni with Vodka Sauce<br/>
+                    <h3 class="box">Salads</h3>
+                    <input type="checkbox" name="topic2" value="Salad1"/> Green Salad with Pesto<br/>
+                   
+                
+                
+                <p id="good"> What do you like about our website: &nbsp;
+                    &nbsp;<textarea name="comments" rows="5" cols="80" placeholder="Enter your comment here..."></textarea>
+                </p>
+    
+                <p id="bad"> Please provide any feedback you might have that can make your experience better: &nbsp;
+                    &nbsp;<textarea name="comments" rows="5" cols="80" placeholder="Enter your feedback here..."></textarea>
+                </p>
+                <p id="submit-btn">
+                    <input id="sub" type="submit" name="submit" value=" Submit "/>
+                    &nbsp;<input id="res" type="reset" name="reset" value=" Reset "/>
+                </p>
+            </form>
+        What genre of books are you interested in?
+      </body>
+    </html>
+
+
