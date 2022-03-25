@@ -7,8 +7,30 @@
     <title>Spicy Rigatoni with Vodka Sauce</title>
 
     <style>
+    ul.navbar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #e3d5ca;
+      }
+    li.navbar {
+        float: left;
+      }
+    li a {
+        display: block;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+      }
+      li a:hover {
+        text-decoration: double;
+        background-color: #d5bdaf;
+      }
       body {
-        background-color: #EDEDE9;
+        background-color: #edede9;
       }
 
       #title {
@@ -16,14 +38,186 @@
         margin-left: auto;
         margin-right: auto;
       }
+      table {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #edede9;
+      }
+      tr,
+      td {
+        border: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        vertical-align: top;
+      }
+      td#caption {
+        width: 70%;
+        text-align: center;
+      }
+      td#picture {
+        width: 70%;
+      }
+      #last-column {
+        width: 140%;
+        padding-left: 30px;
+        text-align: justify;
+      }
+      #first-cell {
+        width: 35%;
+      }
+      #second-cell {
+        width: 35%;
+        padding-top: 30px;
+      }
+      #description {
+        font-style: italic;
+        padding-top: -100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+        ;
+      }
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
     </style>
   </head>
   <body>
-    <img
-      id="title"
-      src="images/Recipe1.PNG"
-      alt="Spicy Rigatoni alla Vodka"
-      height="250px"
-    />
+    <ul id="nav-bar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="recipes">All Recipes</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="sitemap">Sitemap</a></li>
+      </ul>
+    <table>
+      <tr>
+        <td id="caption" colspan="3">
+          <img
+            src="images/recipe1.PNG"
+            alt="Rigatoni Alla Vodka"
+            height="250px"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td id="picture" colspan="2">
+          <img
+            src="images/rigatoni.PNG"
+            alt="Rigatoni"
+            height="350px"
+            width="100%"
+          />
+        </td>
+        <td id="last-column" rowspan="3">
+          <h3>Procedure:</h3>
+          <ol>
+            <li>
+              Fill a stock pot or other large pot three-quarters full with water
+              and heat over high. Toss in a handful of salt and bring to a boil
+              while you do your other prep.
+            </li>
+            <li>Peel and finely chop 1 onion.</li>
+            <li>
+              Firmly smash 4 garlic cloves with the flat side of a chef’s knife
+              and remove peel.
+            </li>
+            <li>
+              Grate 4 oz. Parmesan on the smallest holes of the box grater.
+            </li>
+            <li>
+              Heat 2 Tbsp. oil in a Dutch oven over medium (position it next to
+              pot of water). Add onion and garlic and cook, stirring constantly,
+              just until onion is starting to brown around the edges, 5–7
+              minutes.
+            </li>
+            <li>
+              Add entire 4.5-oz. tube tomato paste and ½ tsp. red pepper flakes
+              and stir until paste evenly coats onion. Continue to cook,
+              stirring often, until paste is deep red and starting to brown on
+              bottom of pot, 5–7 minutes.
+            </li>
+            <li>
+              Add 2 oz. vodka to deglaze pan and stir to incorporate, scraping
+              bottom of pot. Reduce heat to low.
+            </li>
+            <li>
+              Using a heatproof glass measuring cup, scoop about ¼ cup boiling
+              water from pot, then add ¾ cup heavy cream to measuring cup (this
+              brings up the temperature of the cream so it won’t break when you
+              add it to the pot).
+            </li>
+            <li>
+              Slowly add warmed cream to Dutch oven, stirring constantly, until
+              a smooth sauce forms. Remove from heat.
+            </li>
+            <li>
+              Add 1 lb. rigatoni to pot of boiling salted water and cook
+              according to package instructions until al dente. About 1 minute
+              before the timer goes off, use heatproof measuring cup to scoop up
+              about 1 cup pasta cooking liquid. Heat Dutch oven over low.
+            </li>
+            <li>
+              Using a spider, transfer rigatoni to Dutch oven along with any
+              water that’s piggybacking on the pasta.
+            </li>
+            <li>
+              Add ½ cup pasta cooking liquid to Dutch oven and stir to
+              incorporate, then gradually add half of Parmesan, stirring
+              constantly to melt cheese. You should have a smooth, glossy sauce
+              that coats each piece of pasta. Season with salt and add a splash
+              more pasta cooking liquid to thin sauce, if needed.
+            </li>
+            <li>
+              Divide pasta among bowls. Top with remaining cheese, dividing
+              evenly. Drizzle with more oil, then tear basil leaves over.
+            </li>
+            <li><h4>Enjoy!</h4></li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p id="description">
+            Before you dismiss the notion that an onion, tomato paste, and cream
+            can be merged in minutes to create one of the tastiest homemade
+            pasta sauces you've ever had, consider this. Make this dish for
+            yourself, if you haven't already. Simply use double-concentrated
+            tomato paste, which has far more flavor than ordinary tomato paste.
+          </p>
+          <p>
+          <h4>Cooking Time: 30 min</h4>
+          <h4>Difficulty: Easy</h4>
+          <h4>Origin of Dish: Italy</h4>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td id="first-cell">
+          <h3>Ingredient List</h3>
+          <ul>
+            <li>Kosher salt</li>
+            <li>1 medium onion</li>
+            <li>4 garlic cloves</li>
+            <li>4 oz. Parmesan cheese</li>
+            <li>2 Tbsp. extra-virgin olive oil, plus more for drizzling</li>
+          </ul>
+        </td>
+        <td id="second-cell">
+          <ul>
+            <li>1 4.5-oz tube double-concentrated tomato paste</li>
+            <li>1/2 tsp. crushed red pepper flakes</li>
+            <li>2 0z. vodka</li>
+            <li>3/4 cup heavy cream</li>
+            <li>1 lb. rigatoni</li>
+            <li>Basil leaves (for serving)</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
