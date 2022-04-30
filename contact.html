@@ -133,7 +133,7 @@
           </ul>
     
         <img id="contact" src="images/contact.PNG" alt="Contact Title" height="200px">
-<form action="" method="post">
+<form action="" method="post" id="form-change">
         <p>
             <h2>Have a question or comment for Fernanda? Reach out with the form below!</h2>
         </p>
@@ -148,8 +148,6 @@
                     Age:&nbsp;
                     <input type="text" name="age" maxlength="100" size="20" placeholder="Your Age Here"/>
                 </p>
-    
-            
                 <p id="gender">Gender: &nbsp;
                     &nbsp;Female: <input type="radio" name="gender" value="Female"/>
                     &nbsp;Male:<input type="radio" name="gender" value="Male"/>
@@ -194,10 +192,15 @@
                     &nbsp;<textarea name="comments" rows="5" cols="80" placeholder="Enter your feedback here..."></textarea>
                 </p>
                 <p id="submit-btn">
-                    <input id="sub" type="submit" name="submit" value=" Submit "/>
+                    <input id="sub" type="submit" name="submit" value="Submit" onclick="change_text()"/>
                     &nbsp;<input id="res" type="reset" name="reset" value=" Reset "/>
                 </p>
             </form>
+            <script>
+                function change_text(){
+                    document.getElementById("form-change").innerHTML="Thank you for visiting Fernanda's Cookbook!"
+                }
+            </script>
       </body>
     </html>
 

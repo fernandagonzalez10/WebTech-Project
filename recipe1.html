@@ -109,10 +109,15 @@
       <tr>
         <td id="picture" colspan="2">
           <img
+            id="pic"
             src="images/rigatoni.PNG"
             alt="Rigatoni"
             height="350px"
             width="100%"
+
+          onmouseenter="picChange()"
+          onmouseleave="picChangeBack()"
+
           />
         </td>
         <td id="last-column" rowspan="3">
@@ -221,5 +226,18 @@
         </td>
       </tr>
     </table>
+    <script>
+      function picChange() {
+
+        document.getElementById("pic").scr = "images/rigatoni.png"; }
+        function picChangeBack(){
+          document.getElementById("pic").src="images/rigatoni.png";
+        }
+        function rigatoni1Change() {
+          document.getElementById("rigatoni1").src = "images/rigatoni1"; }
+
+          function rigatoniChangeBack() {
+            document.getElementById("rigatoni1").src="images.rigatoni1.png": }
+    </script>
   </body>
 </html>
